@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joguinhos Online</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <h1>Joguinhos Online</h1>
+      <p>Escolha um jogo e divirta-se direto no navegador.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="menu">
+      <h2>Selecione um jogo</h2>
+      <div class="game-grid">
+        <button class="game-card" data-game="snake">
+          <h3>Jogo da Cobra</h3>
+          <p>Coma frutas, cresça e não bata na parede.</p>
+        </button>
+        <button class="game-card" data-game="tetris">
+          <h3>Tetris</h3>
+          <p>Empilhe peças e limpe linhas antes de chegar no topo.</p>
+        </button>
+        <button class="game-card" data-game="racing">
+          <h3>Corrida Simples</h3>
+          <p>Desvie de obstáculos e marque a maior distância.</p>
+        </button>
+        <button class="game-card" data-game="fps">
+          <h3>Desafio FPS</h3>
+          <p>Atire nos alvos em uma pista 3D simples.</p>
+        </button>
+      </div>
+    </section>
+
+    <section class="play-area">
+      <div class="play-header">
+        <h2 id="game-title">Bem-vindo!</h2>
+        <p id="game-instructions">Selecione um jogo para começar a jogar.</p>
+      </div>
+      <div id="game-container" class="game-container">
+        <div class="placeholder">
+          <p>Escolha um jogo acima para carregar aqui.</p>
+        </div>
+      </div>
+      <div class="score-panel" id="score-panel"></div>
+      <div class="controls" id="controls"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Site simples de jogos em HTML, CSS e JavaScript. Ideal para GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
